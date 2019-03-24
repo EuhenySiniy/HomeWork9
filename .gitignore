@@ -4,3 +4,4 @@ git
 out/
 *.iml
 src/main/
+target/

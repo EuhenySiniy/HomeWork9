@@ -9,11 +9,11 @@ public class MyArrayListTest {
 
     @Test
     public void add() {
-        int expectedSize = 3;
+        int expectedSize = 1;
+        String expectedElement = "zero";
         myArrayList.add("zero");
-        myArrayList.add("one");
-        myArrayList.add("two");
         assertEquals(expectedSize, myArrayList.size());
+        assertEquals(expectedElement, myArrayList.get(0));
     }
 
     @Test
