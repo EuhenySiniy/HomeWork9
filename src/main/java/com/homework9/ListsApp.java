@@ -7,6 +7,7 @@ public class ListsApp {
         myArrayList.add(2);
         myArrayList.add(3);
         myArrayList.add(4);
+        myArrayList.remove(0);
         System.out.println(myArrayList.size());
         myArrayList.clear();
         System.out.println(myArrayList.size());

@@ -30,7 +30,6 @@ public class MyArrayList<E> implements List<E> {
         if (index > this.size) {
             throw new ArrayIndexOutOfBoundsException(index);
         }
-
         int moved = size - index;
         if (moved > 0) {
             System.arraycopy(array, index, array, index - 1, moved);
