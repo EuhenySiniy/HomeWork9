@@ -8,7 +8,7 @@ public class MyArrayListTest {
     private MyArrayList<String> myArrayList = new MyArrayList<>();
 
     @Test
-    public void add() {
+    public void addElementsToList() {
         int expectedSize = 1;
         String expectedElement = "zero";
         myArrayList.add("zero");
@@ -17,7 +17,7 @@ public class MyArrayListTest {
     }
 
     @Test
-    public void remove() {
+    public void removeElementsFromList() {
         int expectedSize = 2;
         myArrayList.add("zero");
         myArrayList.add("one");
@@ -27,7 +27,7 @@ public class MyArrayListTest {
     }
 
     @Test
-    public void clear() {
+    public void clearAllElements() {
         int expectedSize = 0;
         myArrayList.add("zero");
         myArrayList.add("one");
@@ -37,14 +37,14 @@ public class MyArrayListTest {
     }
 
     @Test
-    public void size() {
+    public void showSizeOfList() {
         int expectedSize = 1;
         myArrayList.add("zero");
         assertEquals(expectedSize, myArrayList.size());
     }
 
     @Test
-    public void get() {
+    public void getElement() {
         String expectedElement = "zero";
         myArrayList.add("zero");
         assertEquals(expectedElement, myArrayList.get(0));

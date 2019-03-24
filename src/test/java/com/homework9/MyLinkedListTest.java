@@ -8,7 +8,7 @@ public class MyLinkedListTest {
     private MyLinkedList<String> myLinkedList = new MyLinkedList<>();
 
     @Test
-    public void add() {
+    public void addNewElement() {
         int expectedSize = 1;
         String expectedElement = "zero";
         myLinkedList.add("zero");
@@ -17,7 +17,7 @@ public class MyLinkedListTest {
     }
 
     @Test
-    public void remove() {
+    public void removeElementFromList() {
         int expectedSize = 1;
         myLinkedList.add("zero");
         myLinkedList.add("one");
@@ -26,7 +26,7 @@ public class MyLinkedListTest {
     }
 
     @Test
-    public void clear() {
+    public void clearAllElements() {
         int expectedSize = 0;
         myLinkedList.add("zero");
         myLinkedList.add("one");
@@ -36,7 +36,7 @@ public class MyLinkedListTest {
     }
 
     @Test
-    public void size() {
+    public void showSizeList() {
         int expectedSize = 3;
         myLinkedList.add("zero");
         myLinkedList.add("one");
@@ -45,7 +45,7 @@ public class MyLinkedListTest {
     }
 
     @Test
-    public void get() {
+    public void getElement() {
         String expectedElement = "zero";
         myLinkedList.add("zero");
         assertEquals(expectedElement, myLinkedList.get(0));

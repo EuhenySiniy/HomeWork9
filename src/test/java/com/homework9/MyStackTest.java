@@ -8,7 +8,7 @@ public class MyStackTest {
     private MyStack<String> myStack = new MyStack<>(10);
 
     @Test
-    public void push() {
+    public void pushNewElement() {
         int expectedSize = 1;
         String expectedElement = "zero";
         myStack.push("zero");
@@ -17,7 +17,7 @@ public class MyStackTest {
     }
 
     @Test
-    public void remove() {
+    public void removeElementFromStack() {
         int expectedSize = 0;
         myStack.push("zero");
         myStack.remove();
@@ -25,7 +25,7 @@ public class MyStackTest {
     }
 
     @Test
-    public void clear() {
+    public void clearAllElements() {
         int expectedSize = 0;
         myStack.push("zero");
         myStack.push("one");
@@ -35,7 +35,7 @@ public class MyStackTest {
     }
 
     @Test
-    public void size() {
+    public void showSizeOfStack() {
         int expectedSize = 3;
         myStack.push("zero");
         myStack.push("one");
@@ -44,7 +44,7 @@ public class MyStackTest {
     }
 
     @Test
-    public void peek() {
+    public void peekElement() {
         int expectedSize = 2;
         String expectedElement = "one";
         myStack.push("zero");
@@ -54,7 +54,7 @@ public class MyStackTest {
     }
 
     @Test
-    public void pop() {
+    public void popElement() {
         int expectedSize = 1;
         String expectedElement = "one";
         myStack.push("zero");
