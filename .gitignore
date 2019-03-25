@@ -3,5 +3,4 @@ git
 .idea/
 out/
 *.iml
-src/main/
 target/
